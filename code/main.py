@@ -42,7 +42,7 @@ if __name__ == '__main__':
         d_values = []
 
         for args.seed in range(10):
-            setup_seed(2)
+            setup_seed(args.seed)
 
             permute_masks = random_planetoid_splits
             data, train_id, val_id, test_id = permute_masks(data, dataset.num_classes, percls_trn, val_lb)  
